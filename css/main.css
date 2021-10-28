@@ -106,11 +106,6 @@ footer ul li{
   transition: transform .2s;
 }
 
-.bro_link {
-  align-content: center;
-  height: 200px;
-  width: 10%;
-}
 
 #center_arrow:hover {
   opacity: 1.0;
@@ -200,6 +195,14 @@ button {
   cursor: pointer;
   font-family:  msl;
   box-shadow: 3px 2px 2px black;
+}
+
+div iframe{
+  display: block;
+  margin: 0 auto;
+  width: 640;
+  height: 1000px;
+  text-align: center;
 }
 
 input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */

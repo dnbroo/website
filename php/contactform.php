@@ -9,13 +9,18 @@
 
 
 		$mailTo = "dnoelbrewer@yahoo.com";
-		$headers = "From: ".$mailFrom;
-		$txt = "You have recieved an e-mail from ".$name.". \n \n".$message;
+		$headers = "From: dnbroo@yahoo.com";
+		$txt = "You have recieved an e-mail from ".$mailFrom."\n".$name.".\n \n".$message;
 
 
-		mail($mailTo, $subject, $txt, $headers);
+		if(mail($mailTo, $subject, $txt, $headers)){
+			header("Location: ../html/mailsent.html");
+		}
+		else{
+			echo "Error: Message not accepted";
+		}
 
-		header("Location: ../index.html?mailsend");
+		header("Location: ../html/mailsent.html");
 	}
 
 	else {
