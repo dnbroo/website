@@ -8,8 +8,8 @@
 		$message = $_POST['message'];
 
 
-		$mailTo = "dnoelbrewer@yahoo.com";
-		$headers = "From: dnbroo@yahoo.com";
+		$mailTo = "$TO_EMAIL_HERE";
+		$headers = "From: FROM_EMAIL_HERE";
 		$txt = "You have recieved an e-mail from ".$mailFrom."\n".$name.".\n \n".$message;
 
 
